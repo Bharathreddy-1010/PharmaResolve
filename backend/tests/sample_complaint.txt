@@ -1,0 +1,8 @@
+From: Dr. Marcus Weber <qa@pharma-direct.de>
+To: Complaints QA Handling <triage@pharmamanufacturing.com>
+Date: 04 September 2026
+Subject: Defect Notification - Paracetamol 500 mg (Batch B240812)
+
+We are reporting that shipment received at our Berlin distribution warehouse on 04 September 2026 containing Paracetamol 500 mg tablets (Batch B240812) had 80 blister cartons where tablets had severe chipped corners and surface mottling.
+
+Please initiate urgent investigation and arrange replacement stock.
