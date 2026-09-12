@@ -1,7 +1,8 @@
 import { ComplaintFormData, ComplaintRecord } from '../types/complaint';
 import { StructuredComplaintAI, ProcessingStage, ChatMessage } from '../types/ai';
 
-const API_BASE = '/api';
+const rawBase = import.meta.env.VITE_API_BASE_URL || '';
+const API_BASE = rawBase ? `${rawBase.replace(/\/+$/, '')}/api` : '/api';
 
 export interface AnalyzeResult {
   success: boolean;

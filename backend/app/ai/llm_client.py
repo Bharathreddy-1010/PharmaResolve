@@ -40,7 +40,7 @@ class LLMClient:
 
         if self.api_key:
             try:
-                from langchain_groq import ChatGroq
+                from langchain_groq import ChatGroq  # type: ignore
                 self._groq_client = ChatGroq(
                     groq_api_key=self.api_key,
                     model_name=self.model_name,
@@ -60,8 +60,8 @@ class LLMClient:
     def invoke(self, system_prompt: str, user_prompt: str) -> str:
         """Call Groq API or return fallback if not configured/failed."""
         if self.is_groq_available():
-            from langchain_core.messages import SystemMessage, HumanMessage
-            from langchain_groq import ChatGroq
+            from langchain_core.messages import SystemMessage, HumanMessage  # type: ignore
+            from langchain_groq import ChatGroq  # type: ignore
 
             messages = [
                 SystemMessage(content=system_prompt),

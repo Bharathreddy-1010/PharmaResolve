@@ -30,7 +30,7 @@ class DocumentParser:
     def parse_docx(file_bytes: bytes) -> str:
         """Extract text content from Word DOCX file."""
         try:
-            import docx
+            import docx  # type: ignore
             doc = docx.Document(io.BytesIO(file_bytes))
             text_parts = [p.text for p in doc.paragraphs if p.text.strip()]
             for table in doc.tables:
